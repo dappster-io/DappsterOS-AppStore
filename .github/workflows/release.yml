@@ -39,6 +39,8 @@ jobs:
         draft: true
         prerelease: true
         fail_on_unmatched_files: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.API_TOKEN_GITHUB2 }}
 
     - name: Get version
       id: get_version
